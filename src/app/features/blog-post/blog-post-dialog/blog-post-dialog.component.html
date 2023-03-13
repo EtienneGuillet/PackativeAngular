@@ -1,0 +1,11 @@
+<h1 mat-dialog-title>{{ data.blogPost.title }}</h1>
+<div mat-dialog-content>
+  <div class="blogPostDialog-body">
+    {{ data.blogPost.body }}
+  </div>
+  <div class="blogPostDialog-userId">User id: {{ data.blogPost.userId }}</div>
+  <app-blog-comments></app-blog-comments>
+</div>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close>Close</button>
+</div>

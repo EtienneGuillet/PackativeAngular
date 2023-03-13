@@ -1,0 +1,15 @@
+<mat-accordion>
+  <mat-expansion-panel
+    (opened)="panelOpenState = true"
+    (closed)="panelOpenState = false"
+  >
+    <mat-expansion-panel-header>
+      <mat-panel-title> Show comments </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div class="blogPost-comment" *ngFor="let comment of comments">
+      <div>{{ comment.name }}</div>
+      <div>{{ comment.body }}</div>
+      <div>{{ comment.email }}</div>
+    </div>
+  </mat-expansion-panel>
+</mat-accordion>
